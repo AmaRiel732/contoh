@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CÁ MÈO HÊN CỰC - TABLE A13-14</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sheet">
+  <div class="header">
+    <div><div class="table-label">TABLE</div><div class="table-num">A13-14</div></div>
+    <div class="header-center"><div class="top-fandom">HSR, GI, Frieren, Vocaloid</div><div class="artist">CÁ MÈO HÊN CỰC</div></div>
+    <div class="top-right"><div class="event">Color Fiesta: Season 14 - 6/4/2025</div><div class="qr">QR</div><div class="fullsample">Full sample ⤴</div></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-row">
+      <div class="sec-left"><div class="sec-head"><div><div class="sec-title">Artprint Genshin/ Honkai</div><div class="sec-sub">A5 - Giấy ảnh nhũ</div></div><div class="price">1 for 45k<br>3 for 120k</div></div><div class="grid g-5" id="artprint-grid"></div></div>
+      <div class="sec-right dashed-left"><div class="sec-title">Ticket Robin Winter</div><div class="sec-sub">7x14cm - Giấy ảnh nhũ <span class="new-tag">New</span></div><div class="ticket" id="ticket-grid"></div><div class="price center">1 for 40k</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-row">
+      <div class="sec-left"><div class="sec-head"><div><div class="sec-title">Polaroids Genshin/ Honkai</div><div class="sec-sub">6x9cm - Giấy ảnh nhũ</div></div><div class="price">1 for 30k<br>4 for 100k</div></div><div class="grid g-8" id="polaroid-grid"></div></div>
+      <div class="sec-right dashed-left"><div class="sec-title">🎁 Gift</div><div class="gift-box"><div class="gift-text">Print A6<br>for bill >200k</div><div class="grid g-2" style="margin-top:6px"><div class="item gift-item" data-desc="Freebie untuk bill >200k, selama persediaan masih ada."><img src="https://picsum.photos/seed/gift1/200/300"></div><div class="item gift-item" data-desc="Mini standee bonus"><img src="https://picsum.photos/seed/gift2/200/300"></div></div></div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-row three">
+      <div class="sec-left"><div class="sec-title">Card Bo Góc HSR (GACHA)</div><div class="sec-sub">6x9cm - C600 - Cán bóng (SSR cán Holo)</div><div class="grid g-4" id="gacha-grid"></div></div>
+      <div class="sec-mid"><div class="price left">1 for 30k<br>5 for 150k (1 pick)<br>10 for 300k (2 pick)<br><i>Không bảo hiểm SSR<br>Tỉ lệ ra SSR 30%</i></div></div>
+      <div class="sec-right dashed-left"><div class="sec-title">Artprint HSR (Pick)</div><div class="sec-sub">A5 - Giấy ảnh nhũ</div><div class="price center">1 for 45k / 4 for 150k</div><div class="grid g-4" id="pick-grid"></div></div>
+    </div>
+  </div>
+
+  <div class="section bottom">
+    <div><div class="sec-title">Artprint Frieren</div><div class="grid g-2" id="frieren-grid"></div><div class="price">1 for 45k<br>2 for 80k</div></div>
+    <div><div class="sec-title">Card Miku/ Rin</div><div class="grid g-2" id="miku-grid"></div><div class="price">1 for 30k<br>2 for 55k</div></div>
+    <div><div class="sec-title">Sticker Genshin</div><div class="chibi" id="sticker-grid"></div><div class="price center">1 for 5k<br>6 for 30k<br>Full set 55k</div></div>
+    <div><div class="sec-title">Standee Gacha</div><div class="chibi" id="standee-grid"></div><div class="price center">1 for 50k<br>pick 1 for 65k</div></div>
+  </div>
+</div>
+
+<!-- MODAL DETAIL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">×</span>
+    <div class="modal-left"><img id="m-img"></div>
+    <div class="modal-right">
+      <div class="modal-badge" id="m-badge"></div>
+      <h2 id="m-name"></h2>
+      <p class="m-sub" id="m-sub"></p>
+      <h3 class="m-price" id="m-price"></h3>
+      <p class="m-desc" id="m-desc"></p>
+      <div class="m-tags" id="m-tags"></div>
+      <button class="btn-order" onclick="orderWA()">Pesan via WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
